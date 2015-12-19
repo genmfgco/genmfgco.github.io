@@ -1,0 +1,9 @@
+//= require jquery
+//= require jquery_ujs
+//= require transition-events
+//= require jquery.turbolinks
+//= require transitions
+//= require zoom
+//= require pace.min
+//= require turbolinks
+//= require turbolinks.transitions

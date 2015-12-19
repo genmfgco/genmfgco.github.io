@@ -1,0 +1,64 @@
+body.contact {
+  background-color: $yellow;
+
+  .pace .pace-progress {
+    background: $white;
+  }
+
+  header {
+    a {
+      border-bottom: 1px solid darken($yellow, 20%);
+      color: $black;
+      span {
+        color: darken($yellow, 35%);
+      }
+      &.active-nav-item {
+        border-bottom: 1px solid $black;
+      }
+      &:hover {
+        border-bottom: 1px solid $black;
+        color: $black;
+        span {
+          color: darken($yellow, 35%);
+        }
+      }
+    }
+    .name a {
+      border-bottom: none;
+    }
+  }
+
+
+  #main {
+    @include outer-container;
+    padding: 2em 2em 4em 2em;
+
+    .item {
+      border-top: 1px solid darken($yellow, 20%);
+      padding-top: 2em;
+      padding-bottom: 1em;
+      &:first-child {
+        border: none;
+      }
+      .item__name {
+        font-size: 1.5em;
+        font-weight: 400;
+        padding-bottom: 0.5em;
+        text-align: left;
+      }
+      .item__details {
+        p {
+          font-size: 1.05em;
+          line-height: 1.75em;
+        }
+        ul li {
+          font-style: italic;
+          a { font-style: normal; }
+        }
+        a {
+          border-bottom: 1px solid darken($yellow, 20%);
+        }
+      }
+    }
+  }
+}

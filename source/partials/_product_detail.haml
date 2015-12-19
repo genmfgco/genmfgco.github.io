@@ -1,0 +1,32 @@
+- previous_article = article.previous_article
+- next_article = article.next_article
+
+%section#product-content
+  %h3
+    %span= article.title
+  .content
+    %article
+      .text
+        = article.body
+      - if article.data.available
+        .available
+          = link_to 'Purchase', article.data.available, class: 'button'
+
+  - if article.data.product_images
+    .studio-images
+      - article.data.product_images.each do |image|
+        .studio-image
+          %img{src: image_square(image), data: {action: 'zoom'}}
+
+  - if article.data.context_images
+    .context-images
+      - article.data.context_images.each do |image|
+        .context-image
+          %img{src: image_large(image), data: {action: 'zoom'}}
+
+- if previous_article
+  .previous-article
+    = link_to '&rarr;', previous_article.url, class: 'btn'
+- if next_article
+  .next-article
+    = link_to '&larr;', next_article.url, class: 'btn'

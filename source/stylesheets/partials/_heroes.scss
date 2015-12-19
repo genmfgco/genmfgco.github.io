@@ -1,0 +1,56 @@
+body.heroes {
+  background-color: $blue;
+
+  .pace .pace-progress {
+    background: $white;
+  }
+
+  header {
+    a {
+      border-bottom: 1px solid lighten($blue, 15%);
+      color: $white;
+      span {
+        color: lighten($blue, 35%);
+      }
+      &.active-nav-item {
+        border-bottom: 1px solid $white;
+      }
+      &:hover {
+        border-bottom: 1px solid $white;
+        color: $white;
+        span {
+          color: lighten($blue, 35%);
+        }
+      }
+    }
+    .name a {
+      border-bottom: none;
+    }
+  }
+
+
+  #main {
+    @include outer-container;
+    padding: 4em 2em 4em 2em;
+
+    h3 {
+      color: $white;
+      font-family: $sans-serif;
+      font-size: 1.5em;
+      font-weight: 400;
+      padding-bottom: 0.5em;
+      text-align: left;
+    }
+    ul {
+      padding-bottom: 1em;
+      li {
+        color: $white;
+        font-size: 1.5em;
+        a {
+          color: $white;
+
+        }
+      }
+    }
+  }
+}

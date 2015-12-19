@@ -1,0 +1,7 @@
+- if article.data.context_images
+  .product-unit
+    %a{ href: article.url }
+      .product-image
+        %img{src: image_thumb(article.data.context_images.first) }
+      .product-title
+        %span= article.title

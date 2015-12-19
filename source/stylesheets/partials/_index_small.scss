@@ -1,0 +1,33 @@
+body.index {
+  #main {
+    padding: 6em 2em 4em 2em;
+  }
+
+  section {
+    .content {
+      @include clearfix();
+      padding: 0 0 2em;
+      article {
+        @include span-columns(10);
+        @include shift(1);
+        h3 {
+          text-align: center;
+        }
+
+        p {
+        }
+      }
+    }
+  }
+  .index-row {
+    .one-third {
+      @include span-columns(4);
+      @include omega(3n);
+
+      .product-title {
+        font-size: 1.25em;
+        text-align: center;
+      }
+    }
+  }
+}

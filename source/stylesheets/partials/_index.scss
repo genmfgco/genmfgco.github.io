@@ -1,0 +1,65 @@
+body {
+  transition: background-color;
+}
+
+body.index {
+  background-color: #f5f8fa;
+  .pace .pace-progress {
+    background: $black;
+  }
+}
+
+body.index {
+  #main {
+    @include outer-container;
+    padding: 4em 2em 4em 2em;
+  }
+
+  section {
+    .content {
+      padding: 0 0 2em;
+      article {
+        h3 {
+          font-family: $sans-serif;
+          font-size: 1.5em;
+          font-weight: 400;
+          padding-bottom: 0.5em;
+          text-align: left;
+        }
+
+        p {
+          font-size: 1.05em;
+          line-height: 1.75em;
+          a {
+            color: $black;
+            border-bottom: 1px solid $light-gray;
+            &:hover {
+              border-bottom: 1px solid $black;
+            }
+          }
+        }
+      }
+    }
+  }
+
+
+    .index-row {
+      .one-third {
+        padding-bottom: 1em;
+        .product-title {
+          color: $black;
+          font-family: $sans-serif;
+          font-size: 1.25em;
+          font-weight: 400;
+          text-align: left;
+          margin-top: 0;
+          span {
+            border-bottom: 1px solid $light-gray;
+            &:hover {
+              border-color: $black;
+            }
+          }
+        }
+      }
+    }
+}

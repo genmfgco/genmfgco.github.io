@@ -1,0 +1,119 @@
+body.products {
+  background-color: $black;
+
+  .pace .pace-progress {
+    background: $white;
+  }
+
+  header {
+    a {
+      border-bottom: 1px solid $medium-gray;
+      color: $white;
+      span {
+        color: $medium-gray;
+      }
+      &.active-nav-item {
+        border-bottom: 1px solid $white;
+      }
+      &:hover {
+        border-bottom: 1px solid $white;
+        color: $white;
+        span {
+          color: $medium-gray;
+        }
+      }
+    }
+    .name a {
+      border-bottom: none;
+    }
+  }
+
+
+  #main {
+    section#product-content {
+      @include outer-container;
+      padding: 4em 2em 4em 2em;
+    }
+    .available {
+      padding-top: 1em;
+    }
+    .previous-article, .next-article {
+      display:none;
+      .btn {
+        background-color: $black;
+        color: $white;
+        cursor: pointer;
+        display: inline-block;
+        float: left;
+        font-weight: 500;
+        padding: .5em 1em .5em 1em;
+        text-decoration: none;
+        text-transform: uppercase;
+        user-select: none;
+        vertical-align: middle;
+        white-space: nowrap;
+        &:hover {
+          background-color: $white;
+          color: $black;
+        }
+      }
+    }
+
+    section {
+      h3 {
+        color: $white;
+        font-family: $sans-serif;
+        font-size: 1.5em;
+        font-weight: 400;
+        padding-bottom: 0.5em;
+        text-align: left;
+      }
+
+      p {
+        color: $white;
+        font-size: 1.05em;
+      }
+
+      .content {
+        margin: 0 0 2em 0;
+        .permalink { font-weight: bold; }
+      }
+
+      .text a {
+        color: $white;
+        font-weight: 600;
+        border-bottom: 1px solid lighten($dark-gray, 10);
+        &:hover {
+          border-color: $white;
+        }
+      }
+    }
+
+    blockquote {
+      border-left: 2px solid lighten($dark-gray, 10);
+      margin: 0 0;
+      padding-left: 1em;
+    }
+  }
+
+  .index-row {
+    padding: 4em 2em 4em 2em;
+    .one-third {
+      padding-bottom: 1em;
+      .product-title {
+        color: $white;
+        font-family: $sans-serif;
+        font-size: 1.25em;
+        font-weight: 400;
+        text-align: left;
+        margin-top: 0;
+        span {
+          border-bottom: 1px solid $dark-gray;
+          &:hover {
+            border-color: $white;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,9 @@
+%header
+  .name
+    %a{ href: '/' }
+      GENMFGCO
+      %span &mdash; Archive
+  .nav
+    = link_to 'Products', '/products', is_page_active('products')
+    = link_to 'Heroes', '/heroes', is_page_active('heroes')
+    = link_to 'Contact', '/contact', is_page_active('contact')

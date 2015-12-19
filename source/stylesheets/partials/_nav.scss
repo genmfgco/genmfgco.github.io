@@ -1,0 +1,43 @@
+html, body {
+  @include padding(0 0 0 0);
+  @include margin(0 0 0 0);
+}
+
+header {
+  @include padding(1em 2em 2em 2em);
+  font-weight: 300;
+  text-align: left;
+  width: 100%;
+
+  a {
+    border-bottom: 1px solid $light-gray;
+    color: $black;
+    span {
+      color: $medium-gray;
+    }
+    &.active-nav-item {
+      border-bottom: 1px solid $black;
+    }
+    &:hover {
+      border-bottom: 1px solid $black;
+      color: $black;
+      span {
+        color: $medium-gray;
+      }
+    }
+  }
+
+  .name {
+    font-size: 1.5em;
+    a {
+      border-bottom: none;
+    }
+  }
+  .nav {
+    color: $gray;
+    font-size: 1.15em;
+    a {
+      margin-right: 0.5em;
+    }
+  }
+}

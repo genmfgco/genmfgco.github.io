@@ -1,0 +1,21 @@
+header {
+  @include padding(0.5em 2em 1em 2em);
+  $navigation-height: 60px;
+  height: $navigation-height;
+  line-height: $navigation-height;
+  text-align: center;
+  .name {
+    float: left;
+    font-size: 2.25em;
+    line-height: 60px;
+  }
+  .nav {
+    float: right;
+    font-size: 1.5em;
+    line-height: 60px;
+    a {
+      margin-left: 1em;
+      margin-right: 0;
+    }
+  }
+}
