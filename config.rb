@@ -9,6 +9,8 @@ activate :blog do |blog|
   blog.paginate = true
 end
 
+page '/404.html', directory_index: false
+
 helpers do
   def image_large(path)
     imgix_client.path(path).width(1024).to_url
