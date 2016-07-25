@@ -19,7 +19,6 @@ product_images:
   - projects/bozeman-coatrack/14.jpg
   - projects/bozeman-coatrack/15.jpg
   - projects/bozeman-coatrack/16.jpg
-available: http://www.dispatch.es/
 ---
 
 The Bozeman Coat Rack is a single piece of machine-bent stainless steel hung around a slab of CNC’ed American walnut and anchored securely into place with just two screws. Each hook is dipped in rubber by hand to provide color and extra grip.
